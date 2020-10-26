@@ -1,0 +1,79 @@
+que es compilar? 
+compilar es pasar un programa de codigo fuente a codigo maquina (binario) a grandes razgso
+
+WRITE ONCE, RUN EVERYWHERE
+
+--------------------------------------------------------------------------------
+tipos de prorgrama a crear con java:
+apps de consola (su resultado se ve en una ventana de comandos)
+apps de proposito general(programas por ejemplo eclipse)
+applets (programas creados en java que se ejecutan dentro de un navegador)
+---------------------------------------------------------------------------
+Casesensitive (cuidado con mayusculas y minusculas)
+------------------------------------------------------------------------
+Todo programa java debe estar al menos dentro de 1 clase
+------------------------------------------------------------------------
+todas las sentencias terminan en ;
+-----------------------------------------------------------------------
+Almacenamiento de informacion:
+tipos de datos primitivos de java:(8)
+*Enteros:-Int: (reservan 4bytes de espacio para almacenamiento(desde -2.147.483.48 a 2.147.483.647))
+         -Short (reservan 2bytes de espacio para almacenamiento(desde -32.768 hasta 32.767))
+         -Long: (reservab 8bytes de espacio para almacenamiento, llevan un sufijo L)
+         -Byte: (reser 1byte de espacio para almacentamiento(desde -128 hasta 127))
+*Coma flotante (decimales): - Float(4 bytes de espacio para almacenamiento(aprox 6 a 7 cifras decimales)(SUFIJO F))  ej: 3,25F      
+                            - Double (8 bytes de espacio para almacenamiento (15 cifras decimales))
+*Char: para representar caracteres. ej: 'a'
+*Boolean: 2 unicos valores: True o False
+
+Variable: espacio en la memoria de la pc donde se almacenara un valor que podra cambiar durante la ejecucion del programa
+        -guardan datos temporalmente que necesitaremos en el futuro
+        -para crearla debo: especificar el tipo de dato que se almacenara en su interior = el nombre de la variable. Ej: int salario;
+        -iniciar una variable es darle un valor. Nombre_variable=valor. Java no permite utilizar variables que no se hayan iniciado
+
+Objetos: poseen propiedades y metodos 
+
+Constantes: valor fijo que no podra cambiar durante la ejecucion del programa
+            se declara con final previo a la declaracion de la var 
+
+operadores: aritmeticos (+ ; - ; * ; / )
+            logicos, relacionales y booleanos ( < ; > ; <> ; != ; == ; &&)
+            incremento y decremento ( ++ ; -- ; +=numero ; -=numero )
+            concatenacion: {une valores} (+)
+Excepcion = error (en tiempo de compilacion(errores de escritura), ejecucion(bien escrito problemas al interpretar))
+
+clases: toda clase debe tener un metodo main 
+        propias: creamos nosotros 
+        predefinidas: estan dentro del lenguaje (Strign, Math, Array, Thread, etcetcetc)
+                        string (cadenas de texto)
+                        math (ecuaciones matematicas) Math.sqrt(n) {raiz cuadrada} Math.pow(base, exponente) {exponencial}
+                        array (manipular matrices)
+                        thread (programacion concurrente)
+                        ((RESTO DE CLASES EN BIBLIOTECA CLASES JAVA EN CHROME))
+refundicion: convertir un tipo de dato en otro
+STRING: no es un tipo primitivo , es una clase 
+        String mi_nombre="juan" {mi_nombre es un objeto (instancia, ejemplar) de la clase string)                        
+        metodos mas usados: length(): devuelve longitud de una cadena de caracteres
+                            charAt(): devuelve la posicion de un caracter dentro de una cadena (cuenta desde 0)        
+                            substring(x, y): devuelve una subcadena dentro de la cadena. X=caracter a partil del cual se extrae
+                                              y= el numero de caracteres que se quieren extraer
+                             equals(cadena): devuelve true si dos cadenas que se comparan son iguales y false si no lo son, es CaseSensitive
+                             equalsIgnoreCase: desactiva la sensibilidad de mayusculas 
+Paquetes java: organizan clases, evitan conflictos de nombres y controlan la visibilad de las clases
+                se encuentran en la appi de java 
+
+ENTRADA Y SALIDA DE DATOS:
+         utilizando clases: scanner (nextLine(), nextInt(), nextDouble())
+                            JOptionPane (showInputDialog()) metodo estatico
+Estructuras de control de flujo:
+         modifican el flujo de la ejecucion dando saltos o repitiendo codigo
+         necesitan condiciones.. 2 estructuras (condicional o bucle)
+         condicionales: if (condicion){ codigo a ejecutar } puede acompanarse de else
+                        switch (valor a evaluar){
+                          Case valor1:
+                          codigo a ejecutar;
+                          Break;
+                          Case valor2:
+                          codigo a ejecutar;
+                          Break;
+                        } puede acompanarse de default
